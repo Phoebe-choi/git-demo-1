@@ -1,32 +1,44 @@
-.body{
-  margin: 0;
+#taiji{
+  width:200px;
+  height:200px;
+  border-radius:50%;
+  background: linear-gradient(to right, #ffffff 0%,#ffffff 50%,#000000 50%,#000000 100%); 
+  position:relative;
+  box-shadow: 0 0 25px 0 #333;
+  margin:100px auto;
 }
-  .taiji{
-    border-style:solid;
-    width:0;
-    height:201px;
-    border-radius:100%;
-    border-right: 105px solid black;
-    border-left:105px solid white;
-    box-shadow: 0 0 25px 0 #333;
-    margin: auto;
-  }
-  .taiji .black{
-  border:39px solid black;
-  background-color: white;
-  width: 25px;
-  height: 25px;
-  border-radius: 100%;
-  margin-top: -3px;
-  margin-left:-54px;
-  }
-  .taiji .white{
-    display: block;
-    background: black;
-    border:39px solid white;
-    width:25px;
-    height:26px;
-    border-radius:100%;
-    margin-top:0px;
-    margin-left:-56px;
-  }
+#taiji>.black{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  background-color:black;
+  position:absolute;
+  left:50px;
+}
+#taiji>.white{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  background-color:white;
+  position:absolute;
+  left:50px;
+  bottom:0;
+}
+#taiji>.black>.circle{
+  width:25px;
+  height:25px;
+  border-radius:50%;
+  background-color:white;
+  position:absolute;
+  left:37px;
+  top:37px;
+}
+#taiji>.white>.circle{
+  width:25px;
+  height:25px;
+  border-radius:50%;
+  background-color:black;
+  position:absolute;
+  left:37px;
+  bottom:37px;
+}
