@@ -1,3 +1,16 @@
+body{
+  background-color:grey;
+}
+
+@keyframes turn{
+  from{
+    transform:rotate(0deg);
+  }
+  to{
+    transform:rotate(360deg);
+  }
+}
+
 #taiji{
   width:200px;
   height:200px;
@@ -6,39 +19,31 @@
   position:relative;
   box-shadow: 0 0 25px 0 #333;
   margin:100px auto;
+  animation-name:turn;
+  animation-duration:3s;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
 }
-#taiji>.black{
-  width:100px;
-  height:100px;
-  border-radius:50%;
-  background-color:black;
-  position:absolute;
-  left:50px;
-}
-#taiji>.white{
-  width:100px;
-  height:100px;
+
+#taiji::before{
+  content:'';
+  width:20px;
+  height:20px;
   border-radius:50%;
   background-color:white;
+  position:absolute;
+  left:50px;
+  border:40px solid black;
+}
+
+#taiji::after{
+  content:'';
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  background-color:black;
   position:absolute;
   left:50px;
   bottom:0;
-}
-#taiji>.black>.circle{
-  width:25px;
-  height:25px;
-  border-radius:50%;
-  background-color:white;
-  position:absolute;
-  left:37px;
-  top:37px;
-}
-#taiji>.white>.circle{
-  width:25px;
-  height:25px;
-  border-radius:50%;
-  background-color:black;
-  position:absolute;
-  left:37px;
-  bottom:37px;
+  border:40px solid white;
 }
