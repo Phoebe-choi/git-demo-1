@@ -1,0 +1,37 @@
+a<-{
+	'0':0,
+	'1':2,
+	'2':1,
+	'3':56,
+	'4':3,
+	'5':67,
+	'6':3,
+	'length':7  
+}
+hash<-{
+
+}
+index<-0
+while(index<a[index])
+if hash[number]==underfined
+	hash[number]==1
+else 
+	hash[number]=hash[number]+1
+end
+index<-index+1
+end
+index2<-0
+max<-findMax(a)
+newArr<-{}
+while(index2<max+1) 
+	count=hash[index2]
+	if count!=underfined
+		countIndex =0
+		while(countIndex<count)
+			newArr.push(index2)
+			countIndex<-countIndex+1
+		end
+	end
+	index2<-index2+1
+end
+print newArr
